@@ -18,5 +18,3 @@ Pleased to meet you.
 '''.format(first_name, last_name))
 
 # This used the format method to print the first and last name in the greeting.
-
-
