@@ -14,5 +14,10 @@ first_name = input('Please enter your first name: ')
 exchange_rate = float(input(f'Hi {first_name}. Please enter the NZ/AU exchange rate: '))
 
 # get the amount of NZ dollars to exchange
-nz_dollars = float(input('Please enter the amount of NZ $`s you want to exchange: '))
+nz_dollars = float(input("Please enter the amount of NZ $'s you want to exchange: "))
 
+# calculate the amount of AU dollars
+au_dollars = nz_dollars * exchange_rate
+
+# display the result 
+print(f'{first_name}, I can exchange NZ ${nz_dollars:.2f} into AU ${au_dollars:.2f} for you.')
