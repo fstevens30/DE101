@@ -1,4 +1,4 @@
-# Lab 1-2-1 Q1
+# Lab 1-3-1 Q1
 # Flynn Stevens
 # fas0265@arastudent.ac.nz
 
