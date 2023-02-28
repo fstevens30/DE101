@@ -11,10 +11,10 @@ last_name = input('Please enter your last name: ')
 
 # Now print the greeting with the first and last name.
 
-print('''Hi
-{}
-{}
+print(f'''Hi
+{first_name}
+{last_name}
 Pleased to meet you.
-'''.format(first_name, last_name))
+''')
 
 # This used the format method to print the first and last name in the greeting.
