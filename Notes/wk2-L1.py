@@ -138,3 +138,14 @@ print(len(len_me)) # Returns 6
 # EXAMPLE
 MULTIPLY_ME = "_"
 print(MULTIPLY_ME * 10) # Returns "__________"
+
+# Escaping characters are used to print special characters that are used in Python
+# EXAMPLE
+
+# bad_string = "This string has a " in it"
+# This will cause an error because the " in " is used to check if a string is in another string
+
+good_string = "This string has a \" in it"
+print(good_string) # Returns "This string has a " in it"
+
+# The \ is used to ignore the extra " in the string
