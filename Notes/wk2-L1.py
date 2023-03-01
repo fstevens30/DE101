@@ -118,3 +118,23 @@ print(lstrip_me.lstrip()) # Returns "lstrip me     "
 # rstrip() EXAMPLE
 rstrip_me = "     rstrip me     "
 print(rstrip_me.rstrip()) # Returns "     rstrip me"
+
+# We can also remove specific characters with strip()
+# EXAMPLE
+
+strip_me = "strip me"
+print(strip_me.strip("s")) # Returns "trip me"
+
+
+# len()
+# This function returns the length of a string
+# EXAMPLE
+
+len_me = "len me"
+print(len(len_me)) # Returns 6
+
+# String multiplication
+# We can multiply a string by an integer
+# EXAMPLE
+MULTIPLY_ME = "_"
+print(MULTIPLY_ME * 10) # Returns "__________"
