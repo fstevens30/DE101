@@ -84,3 +84,37 @@ print(join_me) # Returns ["join", "me"]
 count_me = "count me and me and me!"
 print(count_me.count("me")) # Returns 3
 print(count_me) # Returns "count me and me and me!"
+
+
+# Combining replace() and title()
+# EXAMPLE
+
+message = "This is a string with a lot                  of spaces"
+
+print(f'Original message: {message}')
+
+titled_message = message.title()
+print(f'Titled message: {titled_message}')
+
+replaced_message = titled_message.replace(" ", "")
+print(f'Replaced message: {replaced_message}')
+
+# Output
+# Original message: This is a string with a lot                  of spaces
+# Titled message: This Is A String With A Lot                  Of Spaces
+# Replaced message: ThisIsAStringWithALotOfSpaces
+
+
+# Removing spaces with strip(), lstrip(), and rstrip()
+
+# strip() EXAMPLE
+strip_me = "     strip me     "
+print(strip_me.strip()) # Returns "strip me"
+
+# lstrip() EXAMPLE
+lstrip_me = "     lstrip me     "
+print(lstrip_me.lstrip()) # Returns "lstrip me     "
+
+# rstrip() EXAMPLE
+rstrip_me = "     rstrip me     "
+print(rstrip_me.rstrip()) # Returns "     rstrip me"
