@@ -149,3 +149,22 @@ good_string = "This string has a \" in it"
 print(good_string) # Returns "This string has a " in it"
 
 # The \ is used to ignore the extra " in the string
+
+# Slicing a string
+# We can slice a string to get a specific part of the string
+
+# EXAMPLE
+to_be_sliced = "slice me into pieces"
+
+print(to_be_sliced[0:5]) # Returns "slice"
+
+# The first number is the starting index and the second number is the ending index
+# The ending index is not included in the slice
+
+# We can also add a third number to the slice to specify the step
+# EXAMPLE
+another_to_be_sliced = "slice me into pieces"
+
+print(another_to_be_sliced[0:5:2]) # Returns "slc"
+# The third number is the step, it specifies how many characters to skip
+# In this case it starts at index 0 and skips 2 characters until it reaches index 5
