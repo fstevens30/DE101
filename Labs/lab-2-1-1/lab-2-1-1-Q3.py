@@ -7,7 +7,7 @@
 # Get the user to enter a sentence.
 
 first_name = input('Please enter your first name: ').strip().title()
-last_name = input('Please enter your last name: ').strip().title()
+last_name = input(f'{first_name}, please enter your last name: ').strip().title()
 
 full_name = f'{first_name} {last_name}'
 
