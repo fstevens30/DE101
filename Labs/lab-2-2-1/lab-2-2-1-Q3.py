@@ -3,7 +3,7 @@
 # fas0265@arastudent.ac.nz
 
 # Get the user to input their name
-name = input("Please enter your name: ").strip().title()
+name = input("Please enter your first name: ").strip().title()
 
 # Get the user to input the first integer
 first_int = int(input(f'Hi {name}, please enter the first integer: '))
