@@ -4,8 +4,9 @@
 
 ## General Info 
 
-- Tutor: Dave Bracken
-- Classes: Wednesday's 13:00 - 15:00, X305 & Friday's 13:00 - 15:00, X305
+- Tutor: Dave Bracken :scientist:
+- Classes: Wednesday's 13:00 - 15:00, X305 & Friday's 13:00 - 15:00, X305 :school:
+- Lanuage: Python :snake:
 
 ## Course Outline
 
