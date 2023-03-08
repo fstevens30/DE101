@@ -36,10 +36,10 @@ if user_wants[0] == 'y': # If the first character of the user input is 'y'
                     cash = input('How much cash do you have? ')
                     # check that the cash is a valid amount of cash
                     if cash.replace('.', '', 1).isdigit() == False:
-                        print(f'{cash} is not a valid amount of cash.')
+                        print(f'{cash} is not a valid amount of money.')
                         print('Enjoy your time at the beach.')
-                    # Else if the cash amount is 0
-                    elif cash == 0:
+                    # Else if the cash variable converted to an integer is 0
+                    elif int(float(cash)) == 0:
                         print('Please remember to bring cash next time.')
                         print('Enjoy your time at the beach.')
                     else:
@@ -48,6 +48,9 @@ if user_wants[0] == 'y': # If the first character of the user input is 'y'
                         if ice_cream_cost.replace('.', '', 1).isdigit() == False:
                             print(f'{ice_cream_cost} is not a valid cost for an ice cream.')
                         else:
+                            # Convert the cash and ice cream cost to floats
+                            cash = float(cash)
+                            ice_cream_cost = float(ice_cream_cost)
                             remainder_cash = cash - ice_cream_cost
                             if cash >= ice_cream_cost:
                                 print(f'You can buy an ice cream and you will have ${remainder_cash:.2f} left.')
@@ -55,9 +58,7 @@ if user_wants[0] == 'y': # If the first character of the user input is 'y'
                             else:
                                 print(f'Sorry {user_name}, no ice cream today.')
                                 print('Enjoy your time at the beach.')
-
-                    
-
+                                
                 else: # They don't want an ice cream
                     print('Enjoy your time at the beach.')
 
@@ -65,5 +66,8 @@ if user_wants[0] == 'y': # If the first character of the user input is 'y'
                 print(f'It\'s not warm enough, stay at home.')
         else: # The user input is not a number
             print('The temperature needs to be numeric.')
+
+    else: # The user input is not a number
+        print('The temperature needs to be numeric.')
 else:
     print('Ok, enjoy your time at home.')
