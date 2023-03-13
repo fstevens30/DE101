@@ -8,7 +8,7 @@
 LINE = ('Line ')
 
 # Get the line number from the user
-line_request = input('Please enter the number of lines you would like displayed: ')
+line_request = input('Please enter the number of lines you would like displayed: ').strip()
 
 # Make sure it is int and greater than 0
 if line_request.isdigit() and int(line_request) > 0:
@@ -16,9 +16,11 @@ if line_request.isdigit() and int(line_request) > 0:
     line_request = int(line_request)
     for line_request in range(1, line_request + 1):
         print(LINE + str(line_request))
+elif line_request == '0':
+    pass # Do nothing
 else:
     # If it is not int
     print('Integers only please.')
 
-# Ending string
-print('Bye.')
+# Final line
+print("Bye.")
