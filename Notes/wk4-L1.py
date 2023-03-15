@@ -73,3 +73,20 @@ while loop_counter <= end:
     print(loop_counter)
     loop_counter = loop_counter + 1
 # This loop will print the numbers 1 through 5.
+
+
+# Validating inputs with a while loop
+# This loop will continue to run until the user enters a valid input.
+
+MIN_VALUE = 1
+MAX_VALUE = 10
+value = 11 # Set to an invalid value to start the loop
+
+while value < MIN_VALUE or value > MAX_VALUE:
+    value = int(input(f'Enter a number between {MIN_VALUE} and {MAX_VALUE}: '))
+    if value < MIN_VALUE or value > MAX_VALUE:
+        print(f'Sorry, {value} is not between {MIN_VALUE} and {MAX_VALUE}.')
+print('Thank you.')
+
+print('Here be \U0001F409') # This prints a dragon emoji :D
+
