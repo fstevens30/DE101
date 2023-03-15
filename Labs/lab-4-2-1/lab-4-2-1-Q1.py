@@ -12,7 +12,6 @@ while not is_valid:
     else:
         print('Your full name is not valid.')
 
-# Below is my original code, but I have since changed it to the above code.  I have left it here for reference.
 
 # user_name = input('Please enter your full name: ').strip().title()
 

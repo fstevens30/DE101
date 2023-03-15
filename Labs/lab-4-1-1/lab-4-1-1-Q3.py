@@ -23,9 +23,9 @@ if counter_request.isdigit() and int(counter_request) > 0:
         # Start at COUNTER_START and increment by increment_request
         for i in range(1, counter_request + 1):
             if i == 1:
-                print(COUNTER + str(i) + ' ' + VALUE + str(1))
+                print(f'{COUNTER}{i} {VALUE}{(i - 1) * increment_request + 1}')
             else:
-                print(COUNTER + str(i) + ' ' + VALUE + str((i - 1) * increment_request + 1))
+                print(f'{COUNTER}{i} {VALUE}{(i - 1) * increment_request + 1}')
         print('Bye.')
 
     elif increment_request == '0':
